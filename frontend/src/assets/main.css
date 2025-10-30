@@ -1,5 +1,6 @@
 @import './base.css';
 
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,7 +29,7 @@ a,
   }
 
   #app {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }

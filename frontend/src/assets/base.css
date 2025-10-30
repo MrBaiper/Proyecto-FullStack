@@ -61,7 +61,8 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background: radial-gradient(1200px 600px at 10% 20%, rgba(34,197,94,0.08), transparent),
+              linear-gradient(135deg, #0f172a 0%, #111827 100%);
   transition:
     color 0.5s,
     background-color 0.5s;

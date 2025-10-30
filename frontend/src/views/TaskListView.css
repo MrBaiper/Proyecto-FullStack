@@ -1,0 +1,203 @@
+.tasks {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-section,
+.table-section {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form label {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn,
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.btn {
+  background: #e2e8f0;
+}
+
+.btn:hover {
+  background: #cbd5e0;
+}
+
+.btn-primary {
+  background: #3182ce;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2b6cb0;
+}
+
+.btn-small {
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background: #63b3ed;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.btn-small:hover {
+  background: #4299e1;
+}
+
+.btn-small.danger {
+  background: #e53e3e;
+}
+
+.btn-small.danger:hover {
+  background: #c53030;
+}
+
+.alert {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.alert.error {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.alert.success {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.table th {
+  background: #edf2f7;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* === MODAL POPUP === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 41, 59, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.25s ease-out;
+}
+
+.modal.small {
+  max-width: 380px;
+  text-align: center;
+}
+
+.modal-title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Botones secundarios dentro del modal */
+.btn-secondary {
+  background: #e2e8f0;
+  color: #1a202c;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e0;
+}
+
+/* Botón rojo dentro del modal */
+.btn-primary.danger {
+  background: #e53e3e;
+}
+
+.btn-primary.danger:hover {
+  background: #c53030;
+}
